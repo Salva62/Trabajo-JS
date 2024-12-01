@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../CSS/estilos3.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <!-- Hoja de estilos para Leaflet y OpenStreetMap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" >
+</head>
+<body>    
+    <header>
+        <h1><img src="../images/Logotipo.png" alt="logotipo" class="logo"> Cars Promo Venta <img src="../images/Logotipo.png" alt="logotipo" class="logo"></h1> 
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/Presupuesto.html">Calcula tu presupuesto</a></li>
+                <li><a href="../views/Productos.html">Galería</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <div>
+        <table>
+            <caption>Contacta con nosotros</caption>
+            <tbody>
+                <tr>
+                    <td>Teléfono</td>
+                    <td><a href="tel:666555444">666555444</a></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:carspromoventa@gmail.com">carspromoventa@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td>
+                        Nos encontramos en C/ Neptuno s/n (Granada)
+                        <!-- Aquí se insertará el mapa con la ruta -->
+                        <div id="map" style="height: 400px;"></div><br>
+                        <!-- Enlace para abrir el mapa en pantalla completa -->
+                        <a href="#" id="fullscreen-link">Abrir en pantalla completa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td><a href="../index.html">Web Cars Promo Venta</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br> <br>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-images">
+            <a href="https://www.youtube.com/"><img src="../images/youtube.jpg" alt="youtube"></a>
+            <a href="https://www.facebook.com/"><img src="../images/FB.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="../images/IG.jpg" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter"></a>
+        </div>
+        <p>© Derechos de autor 2024 CarsPromoVenta. Aviso Legal: Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- Scripts para Leaflet y OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <!-- Ruta al archivo JavaScript en otra carpeta -->
+    <script src="../js/mapa.js"></script>
+</body>
+</html>

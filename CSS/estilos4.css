@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: bisque;
+    margin-top: 200px; /* Ajusta el margen superior según sea necesario */
+}
+
+header {
+    background-color: rgb(141, 141, 178);
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;            
+        z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave debajo del encabezado */
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 15px;
+        min-height: 120px; /* Ajusta según sea necesario para evitar el corte de letras */   
+}
+nav {
+    background-color: #333;
+    
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+/*--------Barra de navegación-------------*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;    
+}
+/* Cambiar color al pasar el ratón */
+nav ul a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*-----------Footer-----------*/
+footer {
+    grid-area: my-footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+.footer-images img {
+    width: 30px; /* Tamaño deseado en píxeles */
+    height: 30px; /* Tamaño deseado en píxeles */
+    margin-right: 20px; /* Margen derecho entre las imágenes */
+}
+/*-----------Table-----------*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Estilos para las imágenes en miniatura */
+.gallery-img {
+    width: 150px; /* Ancho deseado para todas las imágenes en miniatura */
+    height: 100px; /* Altura deseada para todas las imágenes en miniatura */
+    margin: 10px; /* Margen entre las imágenes */
+    object-fit: cover; /* Ajuste de la imagen para mantener la proporción */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+    transition: transform 0.3s; /* Transición suave al hacer crecer la imagen */
+}
+.gallery-img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    transition: transform 0.3s ease; /* Agrega una transición suave al cambio de tamaño */
+}
+
+.modal {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* Estilos para las imágenes en tamaño grande */
+.modal-content {
+    width: 600px; /* Establece el ancho máximo */
+    height: auto; /* Establece la altura máxima */
+    margin: auto; /* Centra la imagen en el modal */
+    display: block; /* Muestra la imagen como un bloque */
+}
+.espacio-inferior {
+    margin-bottom: 150px; /* Puedes ajustar este valor según sea necesario */
+}

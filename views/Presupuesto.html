@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../CSS/estilos2.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <!-- Estilos para el calendario -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <h1><img src="../images/Logotipo.png" alt="logotipo" class="logo"> Cars Promo Venta <img src="../images/Logotipo.png" alt="logotipo" class="logo"></h1> 
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/Productos.html">Galería</a></li>
+                <li><a href="../views/Contacto.html">Contacto</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <main>
+        <h1>Formulario de solicitud</h1><br>
+        <div id="contenedor">
+            <form action="pagina.php" method="POST" class="formulario" id="formulario">
+                <fieldset class="form-control">
+                    <legend>Datos de contacto</legend><br>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                        <input type="text" id="fechaNacimiento" name="fechaNacimiento" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" class="valida">
+                        <br>
+                        <small>Error mensaje</small>
+                    </div>              
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Presupuesto</legend><br>
+                    <div>
+                        <label for="vehiculo">  
+                            Elija su vehículo
+                        </label>
+                        <select id="vehiculo" name="vehiculo">
+                            <option value="10000">Audi</option>
+                            <option value="15000">Toyota</option>
+                            <option value="20000">Mercedes</option>
+                            <option value="12000">Citroen C4</option>
+                            <option value="13000">Ford</option>
+                            <option value="11000">Seat</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="formaPago">
+                            Forma de pago
+                        </label>
+                        <select id="formaPago" name="formaPago">
+                            <option value="0">Al contado</option>
+                            <option value="200">Financiado</option>
+                            <option value="100">Mixto</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="pagoInicial">
+                            Pago inicial
+                        </label>
+                        <input type="text" name="pagoInicial" id="pagoInicial" value=""><br>
+                    </div><br>
+                    <div>
+                        <label>
+                            Elije su regalo
+                        </label>
+                        <input type="radio" name="regalo" value="200" > 200 € en combustible
+                        <input type="radio" name="regalo" value="500" > Seguro a todo riesgo
+                        <input type="radio" name="regalo" value="300" checked > Aspiradora  
+                    </div><br>
+                    <div>
+                        <label>
+                            Elige tus extras
+                        </label>
+                        Llantas cromadas <input type="checkbox" name="extras" value="200" >
+                        Bola remolque <input type="checkbox" name="extras" value="300" >
+                        Lunas tintadas <input type="checkbox" name="extras" value="400" >
+                        Ruedas de cromadas <input type="checkbox" name="extras" value="500" checked> 
+                    </div><br>
+                    <div>
+                        <label for="plazoEstimado">Plazo a recibir (días):</label>
+                        <input type="number" id="plazoEstimado" name="plazoEstimado" min="1">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="inputPresupuesto">Presupuesto estimado:</label>
+                        <input type="text" id="inputPresupuesto" readonly>
+                    </div>                    
+                        <br>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Aceptación de Condiciones y envío de presupuesto</legend><br>
+                    <label for="privacidad">He leído la política de privacidad</label>
+                    <input type="checkbox" id="privacidad" name="privacidad">
+                    <br>
+                </fieldset><br><br>
+                <input class="colorgris" type="submit" value="Enviar Formulario">
+                <input class="colorgris" type="reset" value="Borrar Formulario">
+            </form>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-images">
+            <a href="https://www.youtube.com/"><img src="../images/youtube.jpg" alt="youtube"></a>
+            <a href="https://www.facebook.com/"><img src="../images/FB.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="../images/IG.jpg" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter"></a>
+        </div>
+        <p>© Derechos de autor 2024 CarsPromoVenta. Aviso Legal: Todos los derechos reservados.</p>
+    </footer>
+    <!-- Script para activar el calendario -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/calendario.js"></script>
+    <!-- Script para activar el formulario -->
+    <script src="../js/formularioSencillo.js"></script>
+    <!-- Script para activar cáculo del precio -->
+    <script src="../js/calcularPrecio.js"></script>
+</body>
+</html>

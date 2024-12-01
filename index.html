@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Promo Venta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/estilos.css">    
+    <!--FAVICON-->
+    <link rel="icon" href="./favicon.png" type="image/png"> 
+    <!--Javascript--> 
+    <script src="./js/ajax.js"></script>
+</head>
+<body onload="cargar('Seguros.xml', 'caja1'); cargar('Vendidos.xml', 'caja2'); cargar('CalidadPrecio.xml', 'caja3');">
+    <header>
+        <h1><img src="./images/Logotipo.png" alt="logotipo" class="logo"> Cars Promo Venta <img src="./images/Logotipo.png" alt="logotipo" class="logo"></h1>            
+    <nav>
+        <ul>
+            <li><a href="./views/Productos.html">Galería</a></li>
+            <li><a href="./views/Presupuesto.html">Calcula tu presupuesto</a></li>
+            <li><a href="./views/Contacto.html">Contacto</a></li>
+        </ul>       
+    </nav>
+    </header> 
+    <main>
+        <section>
+            <img class="imgPrecio" src="./images/Precios.png" alt="Precio">
+        </section>               
+        <section>
+            <article>
+                <h2>Los coches mas seguros</h2>
+                <div id = "caja1">
+                    Aquí se cargarán los textos desde AJAX
+                </div>           
+            </article>
+            <article>
+                <h2>Los coches mas vendidos</h2>
+                <div id = "caja2">
+                    Aquí se cargarán los textos desde AJAX
+                </div>
+            </article>
+            <article>
+                <h2>Los mejores Calidad/Precio</h2>
+                <div id = "caja3">
+                    Aquí se cargarán los textos desde AJAX
+                </div>
+            </article>            
+        </section>
+        <section>
+            <div class="imagen-container">
+                <img class="Deportivo" src="./images/Deportivo02.png" alt="Deportivo 01">
+            </div>
+        </section>
+    </main>
+    <aside>
+        <h1>Somos una gran familia</h1>
+        <img src="./images/98.png" alt="Coche" class="imgFamilia">       
+            
+        <h2>Selecciona tus opciones</h2> <br>
+            <h3>Marca</h3>
+            <input class="lista-destino" type="text" placeholder="Buscar marcas:" list="Marcas"><br>    
+            <datalist id="Marcas">
+                <option value="Audi">
+                <option value="BMW">
+                <option value="Ford">
+                <option value="Hyundai">
+                <option value="Jeep">
+                <option value="Kia">
+                <option value="Land Rover">
+                <option value="Renault">
+                <option value="Seat">
+                <option value="Toyota">
+                <option value="Volkswagen">
+            </datalist><br>    
+            <h3>Precio</h3>
+            <input class="lista-destino" type="text" placeholder="€ min." list="Precio">
+            <input class="lista-destino" type="text" placeholder="€ max." list="Precio">                    
+            <datalist id="Precio">
+                <option value="1.000 €">
+                <option value="2.000 €">
+                <option value="3.000 €">
+                <option value="4.000 €">
+                <option value="5.000 €">
+                <option value="6.000 €">
+                <option value="7.000 €">
+                <option value="8.000 €">
+                <option value="9.000 €">
+                <option value="10.000 €">
+                <option value="12.000 €">
+                <option value="13.000 €">
+                <option value="14.000 €">
+                <option value="15.000 €">
+                <option value="16.000 €">
+                <option value="17.000 €">
+                <option value="18.000 €">
+                <option value="19.000 €">
+                <option value="20.000 €">
+                <option value="25.000 €">
+                <option value="30.000 €">
+                <option value="35.000 €">
+                <option value="40.000 €">
+                <option value="50.000 €">
+                <option value="60.000 €">
+                <option value="70.000 €">
+                <option value="80.000 €">
+                <option value="90.000 €">
+                <option value="100.000 €">
+            </datalist><br><br>                    
+            <h3>Km</h3>
+            <input class="lista-destino" type="text" placeholder="Km min." list="Km"> 
+            <input class="lista-destino" type="text" placeholder="Km max." list="Precio">    
+            <datalist id="Km">
+                <option value="0km">                           
+                <option value="0km">
+                <option value="10.000km">
+                <option value="20.000km">
+                <option value="30.000km">
+                <option value="40.000km">
+                <option value="50.000km">
+                <option value="60.000km">
+                <option value="70.000km">
+                <option value="80.000km">
+                <option value="90.000km">
+                <option value="100.000km">
+                <option value="110.000km">
+                <option value="120.000km">
+                <option value="130.000km">
+                <option value="140.000km">
+                <option value="150.000km">
+                <option value="160.000km">
+                <option value="170.000km">
+                <option value="180.000km">
+                <option value="190.000km">
+                <option value="200.000km">
+                <option value="210.000km">
+                <option value="220.000km">
+                <option value="230.000km">
+                <option value="240.000km">
+            </datalist><br><br>
+            <h3>Años</h3>
+            <input class="lista-destino" type="text" placeholder="Año desde" list="Año"> 
+            <input class="lista-destino" type="text" placeholder="Año hasta" list="Año">    
+            <datalist id="Año">
+            <option value="1975">
+                <option value="1976">
+                <option value="1977">
+                <option value="1978">
+                <option value="1979">
+                <option value="1980">
+                <option value="1981">
+                <option value="1982">
+                <option value="1983">
+                <option value="1984">
+                <option value="1985">
+                <option value="1986">
+                <option value="1987">
+                <option value="1988">
+                <option value="1989">
+                <option value="1990">
+                <option value="1991">
+                <option value="1992">
+                <option value="1993">
+                <option value="1994">
+                <option value="1995">
+                <option value="1996">
+                <option value="1997">
+                <option value="1998">
+                <option value="1999">
+                <option value="2000">
+                <option value="2001">
+                <option value="2002">
+                <option value="2003">
+                <option value="2004">
+                <option value="2005">
+                <option value="2006">
+                <option value="2007">
+                <option value="2008">
+                <option value="2009">
+                <option value="2010">
+                <option value="2011">
+                <option value="2012">
+                <option value="2013">
+                <option value="2014">
+                <option value="2015">
+                <option value="2016">
+                <option value="2017">
+                <option value="2018">
+                <option value="2019">
+                <option value="2020">
+                <option value="2021">
+                <option value="2022">
+                <option value="2023">
+                <option value="2024">    
+            </datalist><br><br>
+            <h3>Provincia</h3>
+            <input class="lista-destino" type="text" placeholder="Todas las provincias" list="Provincia">
+            <datalist id="Provincia">
+                <option value="Albacete">
+                <option value="Alicante">
+                <option value="Almería">
+                <option value="Ávila">
+                <option value="Badajoz">
+                <option value="Barcelona">
+                <option value="Bilbao">
+                <option value="Burgos">
+                <option value="Cáceres">
+                <option value="Cádiz">
+                <option value="Castellón">
+                <option value="Ciudad Real">
+                <option value="Córdoba">
+                <option value="Cuenca">
+                <option value="Gerona">
+                <option value="Granada">
+                <option value="Guadalajara">
+                <option value="Huelva">
+                <option value="Huesca">
+                <option value="Jaén">
+                <option value="León">
+                <option value="Lérida">
+                <option value="Logroño">
+                <option value="Lugo">
+                <option value="Madrid">
+                <option value="Málaga">
+                <option value="Murcia">
+                <option value="Orense">
+                <option value="Oviedo">
+                <option value="Palencia">
+                <option value="Pamplona">
+                <option value="Pontevedra">
+                <option value="Salamanca">
+                <option value="Santa Cruz de Tenerife">
+                <option value="Santander">
+                <option value="Segovia">
+                <option value="Sevilla">
+                <option value="Soria">
+                <option value="Tarragona">
+                <option value="Teruel">
+                <option value="Toledo">
+                <option value="Valencia">
+                <option value="Valladolid">
+                <option value="Vitoria-Gasteiz">
+                <option value="Zamora">
+                <option value="Zaragoza">
+            </datalist><br><br>
+            <h3>Marca</h3>
+            <input class="lista-destino" type="text" placeholder="Cualquier Combustible:" list="Combustible">    
+            <datalist id="Combustible">
+                <option value="Diesel">
+                <option value="Gasolina">
+                <option value="Eléctrico">
+                <option value="Híbrido">
+                <option value="Híbrido Enchufable">
+                <option value="GLP">
+                <option value="GNC">
+            </datalist>
+            <br><br>
+            <button type="submit">Enviar</button><br><br><br>
+            <section>
+                <h2>Como empezó el automovilismo</h2><br><br>
+                <p>En el Gran Premio de Mónaco de 1982, una situación extraordinaria ocurrió en las últimas vueltas de la carrera. La lluvia había comenzado a caer sobre el circuito de Monte Carlo, lo que convirtió la pista en un verdadero desafío para los pilotos. En medio del caos y la confusión, una figura inusual tomó el control de la carrera: un joven piloto británico llamado Nigel Mansell.
+
+                Mansell, al volante de un modesto monoplaza de la escudería Lotus, había logrado mantenerse firme en una pista resbaladiza, ganando posiciones conforme otros competidores sufrían accidentes o problemas mecánicos. Conforme la lluvia se intensificaba, Mansell se encontró liderando la carrera, una posición que pocos habrían predicho al comienzo del día.
+                
+                Sin embargo, cuando solo faltaban unas pocas vueltas para el final, Mansell cometió un error aparentemente insignificante. Al aproximarse a la chicane de la piscina, perdió el control de su monoplaza y chocó contra las barreras de protección. A pesar de que su coche estaba dañado, Mansell estaba decidido a continuar.
+                
+                Lo que sucedió a continuación es una de las imágenes más icónicas de la historia de la Fórmula 1. Mansell, sin querer renunciar a la carrera, se negó a abandonar su coche y comenzó a empujarlo a lo largo de la pista. Con la ayuda de los espectadores que se apresuraron a intervenir, Mansell logró llevar su Lotus hasta la línea de meta, aunque fuera de los puntos.
+                
+                Esta extraordinaria muestra de determinación y coraje dejó una impresión duradera en el mundo del automovilismo. Aunque Mansell no ganó la carrera, su valiente esfuerzo para terminarla a pie, empujando su coche, lo convirtió en un héroe para muchos fanáticos de la Fórmula 1.</p>
+            <img src="./images/grulla.jpeg" alt="grulla" class="grulla">
+            </section>
+    </aside>
+    <footer>
+        <div class="footer-images">
+            <a href="https://www.youtube.com/"><img src="./images/youtube.jpg" alt="youtube"></a>
+            <a href="https://www.facebook.com/"><img src="./images/FB.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="./images/IG.jpg" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="./images/twitter.png" alt="twitter"></a>
+        </div>
+        <p>©Copyright 2024 CarsPromoVenta. Aviso Legal: Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

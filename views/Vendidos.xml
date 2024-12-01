@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE coches SYSTEM "coches.dtd">
+<coches>
+    <coche>
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <año>2021</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Mercedes-Benz</marca>
+        <modelo>Clase A</modelo>
+        <año>2021</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Golf</modelo>
+        <año>2021</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Peugeot</marca>
+        <modelo>308</modelo>
+        <año>2021</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Nissan</marca>
+        <modelo>Qashqai</modelo>
+        <año>2021</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Fiat</marca>
+        <modelo>500</modelo>
+        <año>2021</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Volvo</marca>
+        <modelo>XC40</modelo>
+        <año>2021</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+</coches>

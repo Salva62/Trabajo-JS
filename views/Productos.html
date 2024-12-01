@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/estilos4.css">
+    <!--FAVICON-->
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1><img src="../images/Logotipo.png" alt="logotipo" class="logo"> Cars Promo Venta <img src="../images/Logotipo.png" alt="logotipo" class="logo"></h1> 
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/Presupuesto.html">Calcula tu presupuesto</a></li>
+                <li><a href="../views/Contacto.html">Contacto</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <br>
+    <div class="espacio-inferior">
+        <h1>Este es nuestro catálogo actualmente</h1><br>
+        <table>
+            <tr>
+                <td><img src="../images/Coche01Golf.jpg" alt="Imagen 1" class="gallery-img" onclick="openModal('../images/Coche01Golf.jpg')"></td>
+                <td><img src="../images/Coche02Megane.jpeg" alt="Imagen 2" class="gallery-img" onclick="openModal('../images/Coche02Megane.jpeg')"></td>
+                <td><img src="../images/Coche03Passat.jpeg" alt="Imagen 3" class="gallery-img" onclick="openModal('../images/Coche03Passat.jpeg')"></td>
+                <td><img src="../images/Coche04Toyota.jpeg" alt="Imagen 4" class="gallery-img" onclick="openModal('../images/Coche04Toyota.jpeg')"></td>
+            </tr>
+            <tr>
+                <td><img src="../images/Coche05Toyota.jpeg" alt="Imagen 5" class="gallery-img" onclick="openModal('../images/Coche05Toyota.jpeg')"></td>
+                <td><img src="../images/Coche06Ateca.jpeg" alt="Imagen 6" class="gallery-img" onclick="openModal('../images/Coche06Ateca.jpeg')"></td>
+                <td><img src="../images/Coche07Arona.jpeg" alt="Imagen 7" class="gallery-img" onclick="openModal('../images/Coche07Arona.jpeg')"></td>
+                <td><img src="../images/Coche08Leon.jpeg" alt="Imagen 8" class="gallery-img" onclick="openModal('../images/Coche08Leon.jpeg')"></td>
+            </tr>
+            <tr>
+                <td><img src="../images/Coche09C4.jpeg" alt="Imagen 9" class="gallery-img" onclick="openModal('../images/Coche09C4.jpeg')"></td>
+                <td><img src="../images/Coche10C5.jpeg" alt="Imagen 10" class="gallery-img" onclick="openModal('../images/Coche10C5.jpeg')"></td>
+                <td><img src="../images/Coche11Puma.jpeg" alt="Imagen 11" class="gallery-img" onclick="openModal('../images/Coche11Puma.jpeg')"></td>
+                <td><img src="../images/Coche12Mustang.jpeg" alt="Imagen 12" class="gallery-img" onclick="openModal('../images/Coche12Mustang.jpeg')"></td>
+            </tr>
+            <tr>
+                <td><img src="../images/Deportivo01.png" alt="Imagen 13" class="gallery-img" onclick="openModal('../images/Deportivo01.png')"></td>
+                <td><img src="../images/Deportivo02.png" alt="Imagen 14" class="gallery-img" onclick="openModal('../images/Deportivo02.png')"></td>
+                <td><img src="../images/Deportivo03.png" alt="Imagen 15" class="gallery-img" onclick="openModal('../images/Deportivo03.png')"></td>
+                <td><img src="../images/Deportivo04.png" alt="Imagen 16" class="gallery-img" onclick="openModal('../images/Deportivo04.png')"></td>
+            </tr>
+            <tr>
+                <td><img src="../images/Deportivo2.jpeg" alt="Imagen 17" class="gallery-img" onclick="openModal('../images/Deportivo2.jpeg')"></td>
+                <td><img src="../images/Coche13Mercedes.jpg" alt="Imagen 18" class="gallery-img" onclick="openModal('../images/Coche13Mercedes.jpg')"></td>
+                <td><img src="../images/Coche14Mercedes.jpeg" alt="Imagen 19" class="gallery-img" onclick="openModal('../images/Coche14Mercedes.jpeg')"></td>
+                <td><img src="../images/Coche15Citroen.jpeg" alt="Imagen 20" class="gallery-img" onclick="openModal('../images/Coche15Citroen.jpeg')"></td>
+            </tr>
+        </table>
+        
+        
+    </div>
+
+    <!-- Modal para mostrar la imagen en tamaño grande -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Placeholder">
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../js/table.js"></script>
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <div>
+                <a href="https://www.youtube.com/"><img src="../images/youtube.jpg" alt="youtube" height="30" width="30"></a>
+                <a href="https://www.facebook.com/"><img src="../images/FB.png" alt="facebook" height="30" width="30"></a>
+                <a href="https://www.instagram.com/"><img src="../images/IG.jpg" alt="Instagram" height="30" width="30"></a>
+                <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter" height="30" width="30"></a>
+                </div>
+                <p style="font-size: 12px; color: #cfcfcf;">© 2024 CarsPromoVenta. Aviso Legal: Este sitio web es solo para fines informativos. Consulta nuestras políticas de privacidad y términos de servicio para obtener más información.</p>
+            </nav>           
+        </footer>
+</body>
+</html>

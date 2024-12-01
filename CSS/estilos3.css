@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: bisque;
+    margin-top: 200px; /* Ajustar según la altura del encabezado */
+}
+/*----------Header------------------*/
+header {
+    background-color: rgb(141, 141, 178);
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;            
+        z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave debajo del encabezado */
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 15px;
+        min-height: 120px; /* Ajusta según sea necesario para evitar el corte de letras */   
+}
+nav {
+    background-color: #333;
+    
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+/*--------Barra de navegación-------------*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;    
+}
+/* Cambiar color al pasar el ratón */
+nav ul a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*-----------Footer-----------*/
+footer {
+    grid-area: my-footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+.footer-images img {
+    width: 30px; /* Tamaño deseado en píxeles */
+    height: 30px; /* Tamaño deseado en píxeles */
+    margin-right: 20px; /* Margen derecho entre las imágenes */
+}
+/* Estilo para el contenedor del formulario */
+#map {
+    height: 500px;
+    width: 100%;
+}
+/* Header/logo Title */
+table, table caption, table th, table td{
+    border: 1px solid black;
+}
+/* Estilos base para la tabla */
+table {
+    width: 90%; /* Anchura relativa al contenedor */
+    max-width: 90%; /* Anchura máxima */
+    height: 300px; /* Altura fija */
+    background-color: azure;
+    margin-left: 30px;
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Utilizar el 100% de la anchura del contenedor en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+}
+
+table caption{
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(202, 202, 202);
+    padding: 20px;
+}

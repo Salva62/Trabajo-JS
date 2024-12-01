@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE edit_Mensaje SYSTEM "Edit_Mensaje.dtd">
+<coches>
+    <coche>
+        <marca>Audi</marca>
+        <modelo>A3</modelo>
+        <año>2022</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>BMW</marca>
+        <modelo>Serie 3</modelo>
+        <año>2022</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Ford</marca>
+        <modelo>Focus</modelo>
+        <año>2022</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Hyundai</marca>
+        <modelo>Elantra</modelo>
+        <año>2022</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Jeep</marca>
+        <modelo>Cherokee</modelo>
+        <año>2022</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Kia</marca>
+        <modelo>Optima</modelo>
+        <año>2022</año>
+        <seguridad>4 estrellas</seguridad>
+    </coche>
+    <coche>
+        <marca>Land Rover</marca>
+        <modelo>Discovery</modelo>
+        <año>2022</año>
+        <seguridad>5 estrellas</seguridad>
+    </coche>
+</coches>
